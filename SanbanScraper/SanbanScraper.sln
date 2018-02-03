@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2027
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SanbanScraper", "SanbanScraper\SanbanScraper.csproj", "{AC9FD805-D70E-4895-8A36-E59151C7D055}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AC9FD805-D70E-4895-8A36-E59151C7D055}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC9FD805-D70E-4895-8A36-E59151C7D055}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC9FD805-D70E-4895-8A36-E59151C7D055}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC9FD805-D70E-4895-8A36-E59151C7D055}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {84A7DF96-5767-4D29-910B-5049B89F629A}
+	EndGlobalSection
+EndGlobal
