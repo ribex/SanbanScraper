@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
@@ -10,31 +6,22 @@ using OpenQA.Selenium.Chrome;
 namespace SanbanScraper
 {
     [TestFixture]
-    class NUnitTest
+    public class NUnitTest : TestBase
     {
-        IWebDriver driver;
-
-        [SetUp]
-        public void Initialize()
-        {
-            driver = new ChromeDriver();
-            driver.Manage().Window.Maximize();
-            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(20);
-
-        }
-
         [Test]
-        public void OpenAppTest()
+        public void OpenAppVerifyTitleTest()
         {
-
-
             driver.Url = "https://finance.yahoo.com";
+            Console.WriteLine("Opened Yahoo Finance page");
+            var title = driver.Title;
+            Assert.AreEqual("Yahoo Finance - Business Finance, Stock Market, Quotes, News", title);
+            Console.WriteLine("Confirmed title match");
         }
 
-        [TearDown]
-        public void EndTest()
-        {
-            driver.Close();
-        }
+        //[Test]
+        //public void TestName()
+        //{
+        //}
+
     }
 }
