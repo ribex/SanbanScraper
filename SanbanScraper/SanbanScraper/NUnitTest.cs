@@ -9,6 +9,7 @@ using OpenQA.Selenium.Chrome;
 
 namespace SanbanScraper
 {
+    [TestFixture]
     class NUnitTest
     {
         IWebDriver driver;
@@ -17,11 +18,16 @@ namespace SanbanScraper
         public void Initialize()
         {
             driver = new ChromeDriver();
+            driver.Manage().Window.Maximize();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(20);
+
         }
 
         [Test]
         public void OpenAppTest()
         {
+
+
             driver.Url = "https://finance.yahoo.com";
         }
 
