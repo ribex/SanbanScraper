@@ -8,17 +8,11 @@ namespace SanbanScraper
 {
     public class DataManipulator
     {
-        public DataManipulator()
-        {
-
-        }
-
         public static IWebElement GetTable(ChromeDriver driver)
         {
             // get the table
             Thread.Sleep(3000);
-            var table = driver.FindElementByXPath("//table[@data-test=\"contentTable\"]/tbody");
-
+            var table = driver.FindElement(By.XPath("//table[@data-test=\"contentTable\"]/tbody"));
             return table;
         }
 

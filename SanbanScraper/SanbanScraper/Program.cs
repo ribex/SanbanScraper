@@ -7,11 +7,12 @@ using OpenQA.Selenium.Chrome;
 
 namespace SanbanScraper
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             var portfolio = new Portfolio { Name = "DaydreamsCanComeTrue" };
+            Console.WriteLine("Getting Portfolio " + portfolio.Name);
 
             var chrDr = new Driver();
 
@@ -28,4 +29,6 @@ namespace SanbanScraper
             DataManipulator.ParseTable(table, chrDr);
         }
     }
+
+
 }

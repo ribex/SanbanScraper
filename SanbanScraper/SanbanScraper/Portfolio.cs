@@ -4,11 +4,6 @@ namespace SanbanScraper
 {
     public class Portfolio
     {
-        public Portfolio()
-        {
-
-        }
-
         // primary key
         public int PortfolioId { get; set; }
         public string Name { get; set; }

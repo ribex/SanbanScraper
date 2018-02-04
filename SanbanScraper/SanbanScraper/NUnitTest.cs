@@ -10,9 +10,9 @@ namespace SanbanScraper
         [Test]
         public void OpenAppVerifyTitleTest()
         {
-            driver.Url = "https://finance.yahoo.com";
+            Driver.Url = "https://finance.yahoo.com";
             Console.WriteLine("Opened Yahoo Finance page");
-            var title = driver.Title;
+            var title = Driver.Title;
             Assert.AreEqual("Yahoo Finance - Business Finance, Stock Market, Quotes, News", title);
             Console.WriteLine("Confirmed title match");
         }

@@ -11,20 +11,20 @@ namespace SanbanScraper
 {
     public class TestBase
     {
-        protected IWebDriver driver;
+        protected IWebDriver Driver;
 
         [SetUp]
         public void Initialize()
         {
-            driver = new ChromeDriver();
-            driver.Manage().Window.Maximize();
-            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(20);
+            Driver = new ChromeDriver();
+            Driver.Manage().Window.Maximize();
+            Driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(20);
         }
 
         [TearDown]
         public void EndTest()
         {
-            driver.Close();
+            Driver.Close();
         }
     }
 }

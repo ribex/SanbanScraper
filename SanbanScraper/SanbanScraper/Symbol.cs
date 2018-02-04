@@ -5,11 +5,6 @@ namespace SanbanScraper
 {
     public class Symbol
     {
-        public Symbol()
-        {
-
-        }
-
         // primary key
         public int SymbolId { get; set; }
 
